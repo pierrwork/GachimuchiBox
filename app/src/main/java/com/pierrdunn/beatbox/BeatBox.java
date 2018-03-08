@@ -42,6 +42,11 @@ public class BeatBox {
                 1, 0, 1.0f);
     }
 
+    //выгрузка звуков из памяти
+    public void release(){
+        mSoundPool.release();
+    }
+
     //Метод, который проходится по списку звуков в ресурсах
     private void loadSound(){
         String[] soundName;
